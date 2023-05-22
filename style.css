@@ -388,7 +388,7 @@ footer a:hover {
 
     .buttonMask{
         max-width: 90%;
-        align-items: start;
+        background-color: red;
     }
 
     .mask {
