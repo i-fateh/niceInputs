@@ -1,0 +1,322 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #d9e0e6;
+    background: -webkit-linear-gradient(to right, #f1f8fe, #ffffff);
+    background: linear-gradient(to right, #f1f8fe, #ffffff);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 30px 0px 0px 0px;
+    color: rgb(0, 0, 0);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#container p:first-of-type {
+    margin-top: -20px;
+    font-style: oblique;
+}
+
+#thanks {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 8em;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background: #17004e;
+    background: linear-gradient(to right, #2e004b 0%, #5b2199 53%, #873bd3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+#thanksMessage {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.headForm {
+    width: 450px;
+    display: flex;
+    height: 100px;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.headForm img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.headForm img:hover {
+    transition: .3s;
+    transform: scale(1.03);
+    opacity: .9;
+}
+
+.buttonMask{
+    position: relative;
+    width: 440px;
+    height: 70px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.mask {
+    width: 0px;
+    height: 70px;
+    position: absolute;
+
+    background: #a8ff78;
+    background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);
+    background: linear-gradient(to left, #78ffd6, #a8ff78); 
+    border-radius: 10px;
+    left: 0px;
+    bottom: 0px;
+
+    transition: 1s;
+    z-index: 0 !important;
+}
+
+.boutonLevel {
+    position: absolute;
+    width: 440px;
+    border-radius: 10px;
+    height: 60px;
+    border: none;
+    font-size: 1.6em;
+    z-index: 2;
+    background-color: rgb(239, 239, 239) !important;
+}
+
+#file {
+    display: none;
+}
+
+p{
+    text-align: left;
+    width: 430px;
+    font-size: 16px;
+    color: #373737;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+    background: #17004e;
+    background: linear-gradient(to right, #2e004b 0%, #5b2199 53%, #873bd3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: transparent;
+}
+
+.image-upload>input {
+    background-color: red;
+    width: 300px;
+    height: 100px;
+  }
+
+#file1, #file2 {
+    width: 0px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    padding: 10px 10px 0px 0px;
+    visibility:hidden;
+}
+
+label {
+    font-size: 25px;
+    font-weight: 400;
+    transition: .7s;
+    margin-left: 20px;
+    color: #3b3b3b;
+}
+
+.boxInput {
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 400px;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 40px 0px 0px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: #f1f1f1;
+}
+
+.boxInput:hover {
+    opacity: .9;
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+.boxInput:hover> label{
+    transform: translateX(10px);
+    transition: .3s;
+}
+
+#deleteVid, #deleteImg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 15px;
+}
+#deleteVid:hover, #deleteImg:hover {
+    transform: scale(1.3);
+    transition: .3s;
+    opacity: .4;
+}
+
+#inputVideo, #inputImage {
+    min-width: 115px;
+    max-width: 115px;
+    object-fit: cover;
+    object-position: center;
+    height: 100px;
+    margin:0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    transition: .3s;
+}
+
+.boxText {
+    display: flex;
+    align-items: center;
+    width: 440px;
+    margin: 0px !important;
+    padding: 0px;
+}
+
+.boxText:hover {
+    opacity: .9;
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+#iconText, #iconTel {
+    width: 115px;
+    max-height: 65px;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #2d3436;
+    transition: 1s;
+}
+
+#inputTel, #inputText {
+    height: 65px;
+    width: 310px;
+    margin: 10px 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background-color: #f1f1f1;
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: lighter;
+    transition: .7s;
+    color: #3b3b3b;
+}
+
+#inputTel::placeholder, #inputText::placeholder {
+    font-size: 25px;
+    font-weight: lighter;
+    transition: .7s;
+    color: #3b3b3b;
+}
+
+#inputTel:hover, #inputText:hover {
+    outline: none;
+}
+
+#inputTel:focus, #inputText:focus {
+    transform: scale(1);
+    outline: none;
+    transition: .3s;
+}
+
+#inputTel:hover::placeholder, #inputText:hover::placeholder {
+    transform: translateX(10px);
+    transition: .3s;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 8px 0px;
+    margin-top: 50px;
+    bottom: 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+footer a {
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+
+/* WARNING -> IT IS NOT A REAL RESPONSIVE DESIGN */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #container {
+        transform:scale(.7);
+    }
+}

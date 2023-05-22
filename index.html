@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+
+    <div id="container">
+        <div class="headForm">
+            <h1 id="title">Nice Inputs</h1>
+            <label for="file">
+                <img onclick="changeAvatar()" id="avatar" src="./video/headAvatar.png" width="100px" alt="">
+                <input accept="image/*" id="file" type="file" />
+            </label>
+        </div>
+        
+        <p><q>Love of code for original creations</q></p>
+
+        <br>
+        <br>
+        
+        <div class="boxText">
+            <img id="iconText" src="./video/avatar.png" alt="" srcset="">
+            <input onchange="getName()" placeholder="who might you be?" type="text" name="" id="inputText">
+        </div>
+    
+        <div class="boxText">
+            <img id="iconTel" src="./video/iphone.png" alt="" srcset="">
+            <input onchange="getPhone()" placeholder="to call you" type="tel" name="" id="inputTel">
+        </div>
+    
+        <br>
+        <br>
+        <p>* Medias</p>
+
+        <div class="boxInput">
+            <img src="./video/delete.png" id="deleteVid" onclick="deleteVid()">
+            <video autoplay height="100" id="inputVideo">
+                <source src="./video/times-square.mp4" type="video/mp4">
+                Download the
+                <a href="./video/times-square.mp4">MP4</a>
+                video.
+            </video>
+            <input accept="video/*" onclick="getVideo()" type="file" name="" id="file1">
+            <label id="labelVideo" for="file1">Select a video</label>
+        </div>
+    
+        <br>
+    
+        <div class="boxInput">
+            <img src="./video/delete.png" id="deleteImg" onclick="deleteImg()">
+            <img src="./video/joe-doe.jpg" id="inputImage"/>
+            <input accept="image/*" onclick="getImage()" type="file" name="" id="file2">
+            <label id="labelImage" for="file2">Select an image</label>
+        </div>
+
+        <div class="buttonMask">
+            <input type="button" class="boutonLevel" onclick="loadData()" disabled value="Envoyer"/>
+            <div class="mask"></div>
+        </div>
+        
+    </div>
+    <div id="thanks">
+        Thank U!
+        <p id="thanksMessage" onclick="anotherMessage()">Send another message?</p>
+    </div>
+
+    <footer>
+        2023 - created by <a href="https://www.linkedin.com/in/fatehelboucherour/" target="_blank">Fateh</a> <a href="https://www.linkedin.com/in/fatehelboucherour/" target="_blank"><img src="./video/sarah-doe.jpg" alt="fateh" srcset=""></a>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
