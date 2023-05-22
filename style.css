@@ -236,7 +236,7 @@ label {
 }
 
 #iconText, #iconTel {
-    width: 115px;
+    width: 125px;
     max-height: 65px;
     object-fit: contain;
     border-top-left-radius: 10px;
@@ -318,5 +318,9 @@ footer a:hover {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     #container {
         transform:scale(.7);
+    }
+
+    #inputTel::placeholder, #inputText::placeholder {
+        font-size: 15px;
     }
 }
