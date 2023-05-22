@@ -316,7 +316,10 @@ footer a:hover {
 }
 
 
-@media (max-width: 1024px) {
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
 
     body {
         padding: 20px 0px;
@@ -345,7 +348,7 @@ footer a:hover {
     }
 
     .boxText {
-        width: 100%;
+        max-width: 100%;
         padding: 0px;
         justify-content: center;
     }
@@ -355,7 +358,7 @@ footer a:hover {
     }
 
     #iconText, #iconTel {
-        width: 80px;
+        max-width: 80px;
         max-height: 65px;
     }
     
@@ -366,7 +369,7 @@ footer a:hover {
 
     .boxInput {
         height: 100px;
-        width: 80%;
+        max-width: 80%;
     }
 
     .boxInput:hover {
@@ -387,7 +390,7 @@ footer a:hover {
     }
 
     .buttonMask{
-        width: 100%;
+        max-width: 100%;
         align-items: start;
     }
 
