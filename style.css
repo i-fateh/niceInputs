@@ -322,9 +322,9 @@ footer a:hover {
         height: auto;
     }
 
-    #container {
+    /* #container {
         transform:scale(.7);
-    }
+    } */
     #inputTel::placeholder, #inputText::placeholder {
         font-size: 18px;
     }
