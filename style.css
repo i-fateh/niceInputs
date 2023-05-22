@@ -71,6 +71,8 @@ body {
 
 .buttonMask{
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 440px;
     height: 70px;
     margin-top: 50px;
@@ -385,7 +387,13 @@ footer a:hover {
     }
 
     .buttonMask{
-        width: 90%;
+        width: 100%;
+        align-items: start;
+    }
+
+    .mask {
+        max-width: 100%;
+        display: none;
     }
 
     .boutonLevel {
