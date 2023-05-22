@@ -298,10 +298,10 @@ footer {
 }
 
 footer img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 footer a {
     margin-left: 5px;
@@ -316,14 +316,19 @@ footer a:hover {
 
 /* WARNING -> IT IS NOT A REAL RESPONSIVE DESIGN */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    body {
+        padding: 0px;
+    }
+
     #container {
         transform:scale(.7);
     }
     #inputTel::placeholder, #inputText::placeholder {
-        font-size: 15px;
+        font-size: 18px;
     }
     label {
-        font-size: 15px;
+        font-size: 18px;
     }
 
 }
