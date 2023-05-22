@@ -388,11 +388,11 @@ footer a:hover {
     }
 
     .buttonMask{
-        width: 90%;
+        width: 80%;
     }
 
     .mask {
-        max-width: 90%;
+        max-width: 80%;
         display: none;
     }
 
